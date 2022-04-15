@@ -1,15 +1,14 @@
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 50px;
-  background: white;
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .bd-container{
   max-width: 968px;
   width: calc(100% - 3rem);
-  margin-left: var(--mb-3);
-  margin-right: var(--mb-3);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 .nav__list {
   list-style-type:none;
