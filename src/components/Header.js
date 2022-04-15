@@ -22,6 +22,7 @@ const Header = () => {
   return (
     <header className="l-header" id="header">
       <nav className="nav bd-container">
+        <a href="#" className="nav__logo">Christmas Gift</a>
         {(toggleMenu || screenWidth > 500) && (
             <ul className="nav__list">
               <li className="nav__items">
