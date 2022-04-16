@@ -5,6 +5,7 @@ import ScrollTop from './components/ScrollTop';
 import Home from './components/Home';
 import Share from './components/Share';
 import Decorations from './components/Decorations';
+import Accessory from './components/Accessory';
 function App() {
   return (
     <div>
@@ -13,6 +14,7 @@ function App() {
       <Home></Home>
       <Share></Share>
       <Decorations></Decorations>
+      <Accessory></Accessory>
     </div>
   );
 }

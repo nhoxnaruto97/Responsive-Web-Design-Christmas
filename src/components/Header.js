@@ -13,13 +13,14 @@ const Header = () => {
     const navMenu = document.getElementById("nav-menu");
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove("show-menu");
-  }
+  };
   navLink.forEach((n) => n.addEventListener("click", linkAction));
 
   return (
     <header className="l-header" id="header">
       <nav className="nav bd-container">
-    <div className={`nav__menu ${toggleMenu ? "show-menu" : ""} `} id="nav-menu">
+        <a href="#" className="nav__logo">Christmas Gift</a>
+        <div className={`nav__menu ${toggleMenu ? "show-menu" : ""} `} id="nav-menu">
           <ul className="nav__list">
             <li className="nav__item">
               <a href="#home" className="nav__link active-link">
