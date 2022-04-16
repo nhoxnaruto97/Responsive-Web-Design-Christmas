@@ -1,35 +1,25 @@
 /*========== LAYOUT ==========*/
-.l-main{
-    overflow: hidden;
-  }
-  
-  .bd-container{
-    max-width: 968px;
-    width: calc(100% - 3rem);
-    margin-left: var(--mb-3);
-    margin-right: var(--mb-3);
-  }
-  
-  .bd-grid{
-    display: grid;
-    gap: 1.5rem;
-  }
-  
-  .l-header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-    background-color: var(--body-color);
-  }
-  
-  .btn {
-    display: none;
-    position: absolute;
-    right: 10px;
-    top: 7px;
-    padding: 5px;
-    color: #000;
-    font-size: 18px;
+.l-main {
+  overflow: hidden;
+}
+
+.bd-container {
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: var(--mb-3);
+  margin-right: var(--mb-3);
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
 }
