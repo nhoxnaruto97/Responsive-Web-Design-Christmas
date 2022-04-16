@@ -4,65 +4,68 @@
   justify-content: space-between;
   align-items: center;
 }
-.bd-container{
-  max-width: 968px;
-  width: calc(100% - 3rem);
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+
+@media screen and (max-width: 768px){
+  .nav__menu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.5rem 0 0;
+    text-align: center;
+    background-color: var(--body-color);
+    transition: .4s;
+    box-shadow: 0 0 4px rgba(0,0,0,.1);
+    border-radius: 2rem;
+    z-index: var(--z-fixed);
+  }
 }
-.nav__list {
-  list-style-type:none;
-  background: white;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+
+.nav__item{
+  margin-bottom: var(--mb-3);
 }
-.nav__items {
-  margin-right: 20px;
+
+.nav__link, .nav__logo, .nav__toggle{
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.nav__logo:hover{
+  color: var(--first-color);
+}
+
+.nav__link{
+  transition: .3s;
+}
+
+.nav__link:hover{
+  color: var(--first-color);
+}
+
+.nav__toggle{
   font-size: 1.3rem;
-  text-transform: uppercase;
-  color: #000;
   cursor: pointer;
 }
 
-.nav__btn {
-  display: none;
+/* Show menu */
+.show-menu{
+  top: calc(var(--header-height) + 1rem);
+}
+
+/* Active menu link */
+.active-link{
+  position: relative;
+}
+
+.active-link::before{
+  content: '';
   position: absolute;
-  right: 10px;
-  top: 7px;
-  padding: 5px;
-  color: #000;
-  font-size: 18px;
+  bottom: -.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  border-radius: 50%;
 }
-
-@media screen and (max-width: 500px){
-  .nav__list {
-      flex-direction: column;
-      height: auto;
-  }
-  .nav__items:nth-child(1){
-      border-top: 1px solid rgba(255, 255, 255, 0.555);
-      margin-top: 50px;
-  }
-  .nav__items {
-      width: 100%;
-      border-top: 1px solid rgba(255, 255, 255, 0.555);
-      text-align: center;
-      margin-right: 0px;
-      padding: 20px 0;
-  }
-  .nav__btn {
-      display: block;
-  }
- .nav__logo{
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
-  }
-
-  .nav__logo:hover{
-    color: var(--first-color);
-  }
-}
-  
