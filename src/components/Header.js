@@ -19,8 +19,13 @@ const Header = () => {
   return (
     <header className="l-header" id="header">
       <nav className="nav bd-container">
-        <a href="#" className="nav__logo">Christmas Gift</a>
-        <div className={`nav__menu ${toggleMenu ? "show-menu" : ""} `} id="nav-menu">
+        <a href="#section" className="nav__logo">
+          Christmas Gift
+        </a>
+        <div
+          className={`nav__menu ${toggleMenu ? "show-menu" : ""} `}
+          id="nav-menu"
+        >
           <ul className="nav__list">
             <li className="nav__item">
               <a href="#home" className="nav__link active-link">
