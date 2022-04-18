@@ -3,18 +3,16 @@ import "../css/header.css";
 import "../css/navbar.css";
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleLink, setToggleLink] = useState("");
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
   };
 
-  const navLink = document.querySelectorAll(".nav__link");
-  const linkAction = () => {
-    const navMenu = document.getElementById("nav-menu");
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove("show-menu");
+  const clickItem = (param) => {
+    setToggleLink(param);
+    setToggleMenu(false);
   };
-  navLink.forEach((n) => n.addEventListener("click", linkAction));
 
   return (
     <header className="l-header" id="header">
@@ -27,23 +25,43 @@ const Header = () => {
           id="nav-menu"
         >
           <ul className="nav__list">
-            <li className="nav__item">
-              <a href="#home" className="nav__link active-link">
+            <li className="nav__item" onClick={() => clickItem("Home")}>
+              <a
+                href="#home"
+                className={`nav__link ${
+                  toggleLink === "Home" ? "active-link" : ""
+                } `}
+              >
                 Home
               </a>
             </li>
-            <li className="nav__item">
-              <a href="#share" className="nav__link">
+            <li className="nav__item" onClick={() => clickItem("Share")}>
+              <a
+                href="#share"
+                className={`nav__link ${
+                  toggleLink === "Share" ? "active-link" : ""
+                }`}
+              >
                 Share
               </a>
             </li>
-            <li className="nav__item">
-              <a href="#decoration" className="nav__link">
+            <li className="nav__item" onClick={() => clickItem("Decorations")}>
+              <a
+                href="#decoration"
+                className={`nav__link ${
+                  toggleLink === "Decorations" ? "active-link" : ""
+                }`}
+              >
                 Decorations
               </a>
             </li>
-            <li className="nav__item">
-              <a href="#accessory" className="nav__link">
+            <li className="nav__item" onClick={() => clickItem("Accessory")}>
+              <a
+                href="#accessory"
+                className={`nav__link ${
+                  toggleLink === "Accessory" ? "active-link" : ""
+                }`}
+              >
                 Accessory
               </a>
             </li>
