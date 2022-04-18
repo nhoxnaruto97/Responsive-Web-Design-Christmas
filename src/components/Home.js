@@ -8,7 +8,7 @@ const Home = () => {
       <section className="home" id="home">
         <div className="home__container bd-container bd-grid">
           <div className="home__img">
-            <img src={pic} />
+            <img src={pic} alt="home" />
           </div>
 
           <div className="home__data">
