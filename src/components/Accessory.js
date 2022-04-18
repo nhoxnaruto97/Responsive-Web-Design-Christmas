@@ -4,7 +4,7 @@ import pic2 from "../img/accessory2.png";
 import pic3 from "../img/accessory3.png";
 import pic4 from "../img/accessory4.png";
 import pic5 from "../img/accessory5.png";
-import '../css/accessory.css';
+import "../css/accessory.css";
 
 const Accessory = () => {
   return (
@@ -19,7 +19,7 @@ const Accessory = () => {
           <h3 className="accessory__title">Snow Globe</h3>
           <span className="accessory__category">Accessory</span>
           <span className="accessory__preci">$9.45</span>
-          <a href="#" className="button accessory__button">
+          <a href="#section" className="button accessory__button">
             <i className="bx bx-heart"></i>
           </a>
         </div>
@@ -29,7 +29,7 @@ const Accessory = () => {
           <h3 className="accessory__title">Candy</h3>
           <span className="accessory__category">Accessory</span>
           <span className="accessory__preci">$2.52</span>
-          <a href="#" className="button accessory__button">
+          <a href="#section" className="button accessory__button">
             <i className="bx bx-heart"></i>
           </a>
         </div>
@@ -39,7 +39,7 @@ const Accessory = () => {
           <h3 className="accessory__title">Angel</h3>
           <span className="accessory__category">Accessory</span>
           <span className="accessory__preci">$13.15</span>
-          <a href="#" className="button accessory__button">
+          <a href="#section" className="button accessory__button">
             <i className="bx bx-heart"></i>
           </a>
         </div>
@@ -49,7 +49,7 @@ const Accessory = () => {
           <h3 className="accessory__title">Sphere</h3>
           <span className="accessory__category">Accessory</span>
           <span className="accessory__preci">$4.25</span>
-          <a href="#" className="button accessory__button">
+          <a href="#section" className="button accessory__button">
             <i className="bx bx-heart"></i>
           </a>
         </div>
@@ -59,7 +59,7 @@ const Accessory = () => {
           <h3 className="accessory__title">Surprise gift</h3>
           <span className="accessory__category">Accessory</span>
           <span className="accessory__preci">$7.99</span>
-          <a href="#" className="button accessory__button">
+          <a href="#section" className="button accessory__button">
             <i className="bx bx-heart"></i>
           </a>
         </div>
