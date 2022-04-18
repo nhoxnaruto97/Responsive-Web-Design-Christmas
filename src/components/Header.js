@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../css/header.css";
 import "../css/navbar.css";
+import ChangeTheme from "./ChangeTheme";
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [toggleLink, setToggleLink] = useState("");
@@ -65,13 +66,7 @@ const Header = () => {
                 Accessory
               </a>
             </li>
-
-            <li>
-              <i
-                className="bx bx-toggle-left change-theme"
-                id="theme-button"
-              ></i>
-            </li>
+            <ChangeTheme></ChangeTheme>
           </ul>
         </div>
 
