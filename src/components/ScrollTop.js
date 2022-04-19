@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import '../css/scrollTop.css';
-import { FaAngleUp } from "react-icons/fa";
+import "../css/scrollTop.css";
+
 const ScrollTop = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
@@ -21,11 +21,14 @@ const ScrollTop = () => {
     });
   };
   return (
-    <div className="top-to-btn">
-      {showTopBtn && (
-        <FaAngleUp className="icon-position icon-style" onClick={goTop} />
-      )}
-    </div>
+    <a
+      onClick={goTop}
+      href="#section"
+      className={`scrolltop ${showTopBtn ? "show-scroll" : ""}`}
+      id="scroll-top"
+    >
+      <i className="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
   );
 };
 

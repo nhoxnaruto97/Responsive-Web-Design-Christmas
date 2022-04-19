@@ -7,6 +7,7 @@ import Share from "./components/Share";
 import Decorations from "./components/Decorations";
 import Accessory from "./components/Accessory";
 import SendGift from "./components/SendGift";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
@@ -19,6 +20,7 @@ function App() {
         <Accessory></Accessory>
         <SendGift></SendGift>
       </main>
+      <Footer></Footer>
     </div>
   );
 }
